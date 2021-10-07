@@ -1,0 +1,25 @@
+.card-footer {
+  grid-area: footer;
+
+  height: 8rem;
+  width: 100%;
+  padding-right: 2rem;
+
+  background: linear-gradient(to left, var(--color-primary-red), var(--color-primary-orange) 25%, var(--color-secondary-orange));
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.card-footer span {
+  font-size: 2rem;
+  color: var(--color-text-gray);
+}
+
+@media (max-width: 500px) {
+  .card-footer {
+    justify-content: center;
+    padding: 0;
+  }
+}

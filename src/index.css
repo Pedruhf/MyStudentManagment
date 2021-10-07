@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary-red: #EE3123;
+  --color-primary-orange: #FA7F0B;
+  --color-secondary-orange: #FCAF17;
+  --color-text-gray: #FFEDDC;
+  --color-background-light: #FEECDB;
+
+  font-size: 62.5%;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+body {
+  background: var(--color-background-light);
+}
+

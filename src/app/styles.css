@@ -1,0 +1,13 @@
+.App {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 8rem 1fr 6rem;
+  grid-template-areas:
+    "header"
+    "main-content"
+    "footer";
+}
