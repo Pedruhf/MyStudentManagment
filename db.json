@@ -1,0 +1,18 @@
+{
+  "alunos": [
+    {
+      "id": 1,
+      "nome": "Pedro Henrique de Freitas",
+      "email": "delauraph@gmail.com",
+      "curso": "Engenharia de computação",
+      "telefone": "(84) 98137-7722"
+    },
+    {
+      "id": 2,
+      "nome": "Francisco Lucas Nascimento",
+      "email": "xicolucas@gmail.com",
+      "curso": "Tecnologia da informação",
+      "telefone": "(84) 99999-9999"
+    }
+  ] 
+}

@@ -4,7 +4,7 @@ import './styles.css';
 import { Card } from 'react-bootstrap';
 import StudentModal from "./StudentModal";
 
-export default function StudentCard() {
+export default function StudentCard({ student }) {
 
   return (
     <div className="student-card">
@@ -13,10 +13,10 @@ export default function StudentCard() {
           <i className="fas fa-user"></i>
         </div>
         <div className="student-info">
-          <span>Nome: Pedro Henrique de Freitas Silva</span>
-          <span>E-mail: Incuba@tech.com</span>
-          <span>Curso: Engenharia de computação</span>
-          <span>Telefone: (84) 99999-9999</span>
+          <span>Nome: {student.nome}</span>
+          <span>E-mail: {student.email}</span>
+          <span>Curso: {student.curso}</span>
+          <span>Telefone: {student.telefone}</span>
           <StudentModal />
         </div>
       </Card>

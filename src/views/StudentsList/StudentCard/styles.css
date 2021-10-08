@@ -47,12 +47,8 @@
   flex-direction: column;
 }
 
-.student-card .card .student-info span {
-  margin-top: -0.4rem;
-}
-
-.student-card .card .student-info span:first-child {
-  margin-top: 3.5rem;
+.student-card .card .student-info p:first-child {
+  margin-top: 2.5rem;
 }
 
 .student-card .card .student-info .btn {
