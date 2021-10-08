@@ -1,0 +1,113 @@
+.student-card {
+  width: 100%;
+
+  margin: 1.5rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.student-card .card {
+  width: 60rem;
+  height: 19rem;
+  border-radius: 1rem;
+
+  background: #CCC;
+  
+  display: flex;
+  align-items: center;
+}
+
+.student-card .card .student-image {
+  width: 10rem;
+  height: 10rem;
+  margin-left: 1.5rem;
+  margin-right: 5rem;
+  border-radius: 50%;
+
+  background: gray;
+  font-size: 5rem;
+  color: #ABABAB;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-card .card .student-info {
+  width: 70%;
+  max-height: 100%;
+  font-size: 1.8rem;
+  color: #242424;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.student-card .card .student-info span {
+  margin-top: 0.4rem;
+}
+
+.student-card .card .student-info span:first-child {
+  margin-top: 3.5rem;
+}
+
+.student-card .card .student-info .btn {
+  width: 12rem;
+  height: 3rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: 0;
+
+  background: linear-gradient(130deg,#ee3123 -40%,#fa7f0b 50%,#fcaf17 120%);
+  color: var(--color-text-gray);
+
+  align-self: flex-end;
+  outline: none;
+
+  cursor: pointer;
+
+  transition: filter 0.3s;
+}
+
+.student-card .card .student-info .btn:hover {
+  filter: brightness(0.9)
+}
+
+@media (max-width: 600px) {
+  .student-card {
+    padding: 0 1rem;
+  }
+
+  .student-card .card {
+    width: 40rem !important;
+    height: 17.5rem;
+    border-radius: 1rem;
+    padding-right: 2rem;
+  }
+
+  .student-card .card .student-image {
+    width: 7rem;
+    height: 7rem;
+    margin-left: 1.5rem;
+    margin-right: 2.5rem;
+    border-radius: 50%;
+
+    font-size: 4rem;
+  }
+
+  .student-card .card .student-info {
+    width: 75%;
+    font-size: 1.5rem;
+    color: #242424;
+  }
+}
+
+@media (max-width: 768px) {
+  .student-card .card {
+    width: 55rem;
+    border-radius: 1rem;
+    padding-right: 2rem;
+  }
+}

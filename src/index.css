@@ -6,10 +6,13 @@
 
 :root {
   --color-primary-red: #EE3123;
+  --color-secondary-red: #FF594E;
   --color-primary-orange: #FA7F0B;
-  --color-secondary-orange: #FCAF17;
+  --color-secondary-orange: #fff3da;
   --color-text-gray: #FFEDDC;
+  --color-text-black: #242424;
   --color-background-light: #FEECDB;
+  --color-background-dark: #fae8d3;
 
   font-size: 62.5%;
 }

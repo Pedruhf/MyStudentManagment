@@ -5,7 +5,7 @@
   width: 100%;
   padding-right: 2rem;
 
-  background: linear-gradient(to left, var(--color-primary-red), var(--color-primary-orange) 25%, var(--color-secondary-orange));
+  background: linear-gradient(to left,#ee3123 -40%,#fa7f0b 50%,#fcaf17 120%);
 
   display: flex;
   align-items: center;
