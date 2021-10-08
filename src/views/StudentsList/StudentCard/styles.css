@@ -38,7 +38,9 @@
 .student-card .card .student-info {
   width: 70%;
   max-height: 100%;
-  font-size: 1.8rem;
+
+  font-size: 1.7rem;
+  font-family: Poppins, sans-serif;
   color: #242424;
 
   display: flex;
@@ -46,7 +48,7 @@
 }
 
 .student-card .card .student-info span {
-  margin-top: 0.4rem;
+  margin-top: -0.4rem;
 }
 
 .student-card .card .student-info span:first-child {
@@ -81,10 +83,10 @@
   }
 
   .student-card .card {
-    width: 40rem !important;
-    height: 17.5rem;
+    width: 40rem;
+    height: 16rem;
     border-radius: 1rem;
-    padding-right: 2rem;
+    padding-right: 1.5rem;
   }
 
   .student-card .card .student-image {
@@ -99,12 +101,16 @@
 
   .student-card .card .student-info {
     width: 75%;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #242424;
+  }
+
+  .student-card .card .student-info span:first-child {
+    margin-top: 3rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
   .student-card .card {
     width: 55rem;
     border-radius: 1rem;

@@ -34,14 +34,22 @@
   margin-left: 2rem;
 }
 
-@media (max-width: 500px) {
-  .card-header span {
+@media (max-width: 600px) {
+  .card-header .logo span {
     font-size: 2.5rem !important;
+  }
+
+  .card-header nav {
+    display: none;
   }
 }
 
-@media (max-width: 768px) {
-  .card-header span {
+@media (min-width: 600px) and (max-width: 768px) {
+  .card-header .logo span {
     font-size: 3rem;
+  }
+
+  .card-header nav {
+    display: none;
   }
 }

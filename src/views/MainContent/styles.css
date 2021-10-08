@@ -65,7 +65,7 @@ main .card .card-info {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: var(--color-text-gray);
 }
 

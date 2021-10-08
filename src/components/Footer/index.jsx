@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <Card>
       <Card.Footer>
-        <span>MyStudentManagment 	&copy; 2021</span>
+        <span>MyStudentManagement 	&copy; 2021</span>
       </Card.Footer>
     </Card>
   )

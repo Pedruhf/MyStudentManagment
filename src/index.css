@@ -23,5 +23,6 @@ html, body, #root {
 
 body {
   background: var(--color-background-light);
+  font-family: Archivo, sans-serif;
 }
 
