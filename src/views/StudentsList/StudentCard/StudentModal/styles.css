@@ -16,20 +16,23 @@
 
 .student-modal .modal-content {
   width: 80%;
-  height: 90%;
-  padding: 5rem;
+  height: 70%;
+  padding: 3.5rem;
 
   background-color: var(--color-background-light);
   margin: auto;
   border: 1px solid #888;
 
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+
+  overflow-y: scroll;
 }
 
 .student-modal .modal-content .modal-header {
   width: 100%;
+  margin-top: 1rem;
 
   color: var(--color-text-black);
 
@@ -38,10 +41,53 @@
   justify-content: space-between;
 }
 
-.student-modal .modal-content .modal-header button {
+.student-modal .modal-content button {
   font-size: 3rem;
   cursor: pointer;
   border: none;
   outline: none;
   background: transparent;
+
+  align-self: flex-end;
+}
+
+.student-modal .modal-content .student-info {
+  width: 90%;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.student-modal .modal-content .student-info span {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+
+@media (max-width: 600px) {
+  .student-modal .modal-content {
+    height: 60%;
+    padding: 2rem;
+  }
+
+  .student-modal .modal-content .modal-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .student-modal .modal-content .student-info span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .student-modal .modal-content {
+    height: 65%;
+  }
+
+  .student-modal .modal-content .modal-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .student-modal .modal-content .student-info span {
+    font-size: 1.8rem;
+  }
 }

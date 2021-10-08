@@ -13,11 +13,11 @@ export default function StudentCard({ student }) {
           <i className="fas fa-user"></i>
         </div>
         <div className="student-info">
-          <span>Nome: {student.nome}</span>
+          <span>Nome: {student.name}</span>
           <span>E-mail: {student.email}</span>
-          <span>Curso: {student.curso}</span>
-          <span>Telefone: {student.telefone}</span>
-          <StudentModal />
+          <span>Curso: {student.course}</span>
+          <span>Telefone: {student.phone}</span>
+          <StudentModal student={student} />
         </div>
       </Card>
     </div>

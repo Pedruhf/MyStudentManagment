@@ -79,10 +79,12 @@
   }
 
   .student-card .card {
-    width: 40rem;
-    height: 16rem;
+    width: 95vw;
+    height: 19rem;
     border-radius: 1rem;
     padding-right: 1.5rem;
+
+    overflow-y: scroll;
   }
 
   .student-card .card .student-image {
@@ -92,7 +94,7 @@
     margin-right: 2.5rem;
     border-radius: 50%;
 
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .student-card .card .student-info {
