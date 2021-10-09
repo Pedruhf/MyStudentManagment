@@ -6,6 +6,9 @@ import {
   Route
  } from 'react-router-dom';
 
+import { Provider } from 'react-redux';
+import store from '../store';
+
 import Header from "../components/Header";
 import MainContent from "../views/MainContent/index";
 import StudentsList from '../views/StudentsList';
@@ -17,6 +20,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+      <Provider store={store}>
         <Header />
         <Switch>
           <Route path="/" component={MainContent} exact />
@@ -25,6 +29,7 @@ function App() {
           <Route path="*" component={ErrorPage} />
         </Switch>
         <Footer />
+      </Provider>
       </div>
     </Router>
   );

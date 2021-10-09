@@ -1,25 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import './styles.css';
 
-import axios from "axios";
-
 import StudentCard from "./StudentCard";
+import { connect } from "react-redux";
 
-async function getStudent() {
-  const res = await axios('http://localhost:3001/alunos');
-  return res.data;
-}
 
-export default function StudentsList() {
-  const [students, setStudents] = useState([]);
-
-  useEffect(() => {
-    getStudent().then(res => setStudents(res));
-  }, []);
-
+function StudentsList({ students }) {
   return (
     <div className="students-list">
       {students.map(student => (<StudentCard key={student.id} student={student} />))}
     </div>
   )
 }
+
+const mapStateToProps = state => ({
+  students: state.students.alunos
+});
+
+export default connect(mapStateToProps)(StudentsList);

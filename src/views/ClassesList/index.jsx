@@ -1,18 +1,19 @@
 import React from "react";
-import ClassCard from "./ClassCard";
 import './styles.css';
 
-export default function ClassesList() {
+import ClassCard from "./ClassCard";
+import { connect } from "react-redux";
 
+function ClassesList({ classes }) {
   return (
     <div className="classes-list">
-      <ClassCard />
-      <ClassCard />
-      <ClassCard />
-      <ClassCard />
-      <ClassCard />
-      <ClassCard />
-      <ClassCard />
+      {classes.map(classData => (<ClassCard key={classData.id} classData={classData} />))}
     </div>
   )
 }
+
+const mapStateToProps = state => ({
+  classes: state.classes.turmas
+});
+
+export default connect(mapStateToProps)(ClassesList);

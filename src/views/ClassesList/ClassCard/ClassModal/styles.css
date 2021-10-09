@@ -15,9 +15,8 @@
 }
 
 .class-modal .modal-content {
-  width: 80%;
-  height: 60%;
-  border-radius: 1rem;
+  width: 95%;
+  height: 90%;
   padding: 3.5rem;
 
   background-color: var(--color-background-light);
@@ -59,10 +58,28 @@
 }
 
 .class-modal .modal-content .class-info {
-  width: 90%;
+  width: 100%;
   margin-top: 2rem;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.class-modal .modal-content .class-info .student-card {
+  max-width: 60rem;
+  margin: 1rem 0;
+}
+
+.class-modal .modal-content .class-info .student-card .card {
+  height: 21rem;
+  padding-right: 1rem;
+}
+
+.class-modal .modal-content .class-info .student-card button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
 }
 
 .class-modal .modal-content .class-info span {
@@ -73,30 +90,18 @@
 
 
 @media (max-width: 600px) {
-  .class-modal .modal-content {
-    height: 48%;
-    padding: 2rem;
+  .class-modal .modal-content .class-info .student-card .card {
+    height: 24rem;
   }
 
-  .class-modal .modal-content .modal-header h2 {
-    font-size: 1.8rem;
-  }
-
-  .class-modal .modal-content .class-info span {
-    font-size: 1.6rem;
+  .class-modal .modal-content .class-info .student-card .card {
+    height: 34rem;
+    padding-right: 1rem;
   }
 }
 
 @media (min-width: 600px) and (max-width: 768px) {  
-  .class-modal .modal-content {
-    height: 55%;
-  }
-
-  .class-modal .modal-content .modal-header h2 {
-    font-size: 1.8rem;
-  }
-
-  .class-modal .modal-content .class-info span {
-    font-size: 1.8rem;
+  .class-modal .modal-content .class-info .student-card .card {
+    height: 24rem;
   }
 }
