@@ -80,6 +80,7 @@
 
   .student-card .card {
     width: 95vw;
+    min-width: 400px;
     height: 19rem;
     border-radius: 1rem;
     padding-right: 1.5rem;

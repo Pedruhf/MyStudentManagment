@@ -9,6 +9,7 @@ import {
 import Header from "../components/Header";
 import MainContent from "../views/MainContent/index";
 import StudentsList from '../views/StudentsList';
+import ClassesList from '../views/ClassesList';
 import Footer from "../components/Footer";
 import ErrorPage from '../views/ErrorPage';
 
@@ -19,7 +20,8 @@ function App() {
         <Header />
         <Switch>
           <Route path="/" component={MainContent} exact />
-          <Route path="/seus-alunos" component={StudentsList} exact />
+          <Route path="/seus-alunos" component={StudentsList} />
+          <Route path="/suas-turmas" component={ClassesList} />
           <Route path="*" component={ErrorPage} />
         </Switch>
         <Footer />
