@@ -1,0 +1,62 @@
+.student-register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 2rem 0;
+
+  font-family: Poppins, sans-serif;
+  color: var(--color-text-black);
+}
+
+.student-register form {
+  font-size: 2rem;
+}
+
+.student-register .student-name {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.student-register form label {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 0.5rem;
+}
+
+.student-register form input {
+  width: 50rem;
+  padding: 1rem;
+  outline: none;
+  border: 0;
+  border-radius: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.student-register form .form-select {
+  padding: 1rem;
+  outline: none;
+  border: 0;
+  border-radius: 0.75rem;
+}
+
+.student-register form .submit-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.student-register form .submit-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.student-register form .submit-button button {
+  padding: 1rem;
+  border: 0;
+  outline: none;
+  border-radius: 0.5rem;
+  background: #CCC;
+  color: var(--color-text-black);
+}

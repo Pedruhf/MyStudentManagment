@@ -1,7 +1,6 @@
-export function addStudent(state, student) {
+export function addStudent(student) {
   return {
     type: 'ADD_STUDENT',
-    state,
     student
   };
 }

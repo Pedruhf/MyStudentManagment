@@ -99,7 +99,7 @@ const INITIAL_STATE = {
   ]
 };
 
-export default function course(state = INITIAL_STATE, action) {
+export default function handleStudent(state = INITIAL_STATE, action) {
   switch (action.type) {
     case 'ADD_STUDENT':
       return { ...state, alunos: [ ...state.alunos, action.payload]};

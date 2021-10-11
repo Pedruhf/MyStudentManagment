@@ -13,6 +13,7 @@ import Header from "../components/Header";
 import MainContent from "../views/MainContent/index";
 import StudentsList from '../views/StudentsList';
 import ClassesList from '../views/ClassesList';
+import StudentRegister from '../views/StudentRegister';
 import Footer from "../components/Footer";
 import ErrorPage from '../views/ErrorPage';
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/" component={MainContent} exact />
           <Route path="/seus-alunos" component={StudentsList} />
           <Route path="/suas-turmas" component={ClassesList} />
+          <Route path="/cadastrar-alunos" component={StudentRegister} />
           <Route path="*" component={ErrorPage} />
         </Switch>
         <Footer />
