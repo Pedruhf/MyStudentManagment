@@ -6,7 +6,8 @@ const INITIAL_STATE = {
       "course": "Tecnologia da informação",
       "grade": "Graduação",
       "date": "Segunda-feira",
-      "hour": "10:00 - 12:00" 
+      "hour": "10:00 - 12:00",
+      "students_id": [1, 4, 5, 6]
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@ const INITIAL_STATE = {
       "course": "Tecnologia da informação",
       "grade": "Graduação",
       "date": "Quarta-feira",
-      "hour": "08:00 - 10:00" 
+      "hour": "08:00 - 10:00",
+      "students_id": [2, 3, 5, 6]
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@ const INITIAL_STATE = {
       "course": "Tecnologia da informação",
       "grade": "Graduação",
       "date": "Sexta-feira",
-      "hour": "14:00 - 16:00" 
+      "hour": "14:00 - 16:00",
+      "students_id": [1, 3, 4, 6]
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@ const INITIAL_STATE = {
       "course": "Tecnologia da informação",
       "grade": "Graduação",
       "date": "Segunda-feira",
-      "hour": "18:00 - 20:00" 
+      "hour": "18:00 - 20:00",
+      "students_id": [1, 2, 3, 5]
     },
     {
       "id": 5,
@@ -38,7 +42,8 @@ const INITIAL_STATE = {
       "course": "Tecnologia da informação",
       "grade": "Graduação",
       "date": "Quinta-feira",
-      "hour": "08:00 - 10:00" 
+      "hour": "08:00 - 10:00",
+      "students_id": [1, 2, 3, 4]
     },
     {
       "id": 6,
@@ -46,7 +51,8 @@ const INITIAL_STATE = {
       "course": "Tecnologia da informação",
       "grade": "Graduação",
       "date": "Sexta-feira",
-      "hour": "13:00 - 15:00" 
+      "hour": "13:00 - 15:00",
+      "students_id": [2, 4, 5]
     }
   ]
 };

@@ -12,7 +12,11 @@
   justify-content: space-between;
 }
 
-.card-header .logo span {
+.card-header .logo a {
+  text-decoration: none;
+}
+
+.card-header .logo a span {
   font-size: 4rem;
   color: var(--color-text-gray);
 }

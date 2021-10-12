@@ -25,9 +25,11 @@ export default function MobileMenu() {
           <div className="menu-button"><button className="material-icons" onClick={() => toggleMenu('close')} >close</button></div>
           <div className="menu-header">
             <nav>
-              <Link onClick={() => toggleMenu('close')} to="/" >Início</Link>
-              <Link onClick={() => toggleMenu('close')} to="/seus-alunos" >Alunos</Link>
-              <Link onClick={() => toggleMenu('close')} to="/suas-turmas" >Turmas</Link>
+              <Link onClick={() => toggleMenu('close')} to="/">Início</Link>
+              <Link onClick={() => toggleMenu('close')} to="/seus-alunos">Alunos</Link>
+              <Link onClick={() => toggleMenu('close')} to="/suas-turmas">Turmas</Link>
+              <Link onClick={() => toggleMenu('close')} to="/cadastrar-alunos">Cadastrar alunos</Link>
+              <Link onClick={() => toggleMenu('close')} to="/cadastrar-turmas">Cadastrar turmas</Link>
             </nav>
           </div>
         </Card>

@@ -27,7 +27,7 @@ export default function Header() {
     <Card>
       <Card.Header>
         <div className="logo">
-          <span>MyStudentManagement</span>
+        <Link to="/"><span>MyStudentManagement</span></Link>
         </div>
         <nav>
           <Link to="/">Início</Link>
