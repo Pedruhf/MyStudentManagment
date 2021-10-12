@@ -5,7 +5,7 @@
   margin-top: 2rem;
   border-radius: 1rem;
 
-  background: var(--color-text-black);
+  background: var(--color-secundary-dark);
 
   display: flex;
   flex-direction: column;
@@ -29,11 +29,18 @@
   border: 0;
   border-radius: 0.75rem;
   outline: 0;
-  background: #343434;
+  background: var(--color-secundary);
   color: #FFF;
   font-size: 1.5rem;
   cursor: pointer;
   align-self: flex-end;
+
+  transition: filter 0.3s;
+}
+
+.classes-card button:hover {
+  filter: brightness(0.8);
+  color: var(--color-line-in-white);
 }
 
 .fade.modal.show.class-modal {
@@ -52,13 +59,13 @@
 
 .fade.modal.show.class-modal .modal-dialog {
   width: 90%;
-  height: 90%;
   border-radius: 1rem;
   padding: 3.5rem;
   overflow: auto
 }
 
 .fade.modal.show.class-modal .modal-dialog .modal-body {
+  margin-top: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

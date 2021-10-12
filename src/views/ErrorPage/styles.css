@@ -26,9 +26,14 @@
   padding: 1rem 1.5rem;
   font-size: 2rem;
   text-decoration: none;
-  background: #606060;
+  background: var(--color-primary);
   border-radius: 2rem;
   color: #EFEFEF;
+  transition: filter 0.3s;
+}
+
+.error-page a:hover {
+  filter: brightness(0.8);
 }
 
 @media (max-width: 600px) {
@@ -51,10 +56,6 @@
     margin-top: 4rem;
     padding: 1rem 1.5rem;
     font-size: 1.2rem;
-    text-decoration: none;
-    background: #606060;
-    border-radius: 2rem;
-    color: #EFEFEF;
   }
 }
 
@@ -76,11 +77,6 @@
   
   .error-page a {
     margin-top: 4rem;
-    padding: 1rem 1.5rem;
     font-size: 1.8rem;
-    text-decoration: none;
-    background: #606060;
-    border-radius: 2rem;
-    color: #EFEFEF;
   }
 }

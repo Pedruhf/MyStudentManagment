@@ -36,7 +36,7 @@ export default function StudentCard({ student }) {
           </Button>
 
           <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
+            <Modal.Header>
               <Modal.Title>
                 <Button className="material-icons" variant="secondary" onClick={handleClose}>
                   close

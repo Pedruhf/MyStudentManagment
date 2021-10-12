@@ -22,7 +22,7 @@ export default function ClassCard({ classData }) {
       </Button>
 
       <Modal className="class-modal" show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
+        <Modal.Header>
           <Modal.Title>
             <Button className="material-icons" variant="secondary" onClick={handleClose}>
               close

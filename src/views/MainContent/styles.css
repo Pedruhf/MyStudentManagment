@@ -3,7 +3,7 @@ main {
 
   grid-area: main-content;
 
-  background: var(--color-background-light);
+  background: var(--color-input-background);
 
   display: flex;
   align-items: center;
@@ -32,21 +32,21 @@ main .card:hover {
 }
 
 main .card.total-students {
-  background: var(--color-primary-red);
+  background: var(--color-primary-light);
 }
 
 main .card.classes {
-  background: var(--color-primary-orange);
+  background: var(--color-secundary);
   margin-top: 4rem;
 }
 
 main .card.students-register {
-  background: var(--color-secondary-red);
+  background: var(--color-primary-dark);
   margin-left: 4rem;
 }
 
 main .card.classes-register {
-  background: rgb(251, 194, 6);
+  background: var(--color-secundary-dark);
   margin-left: 4rem;
   margin-top: 4rem;
 }
@@ -75,7 +75,7 @@ main .card .card-info {
   justify-content: space-between;
   align-items: flex-end;
   font-size: 2rem;
-  color: var(--color-text-gray);
+  color: var(--color-line-in-white);
 }
 
 main .card .card-info {
@@ -85,7 +85,7 @@ main .card .card-info {
 main .card .card-info > div {
   width: 30px;
   height: 30px;
-  border: 2px solid var(--color-text-gray);
+  border: 2px solid var(--color-line-in-white);
   display: flex;
   border-radius: 50%;
   align-content: center;

@@ -1,6 +1,4 @@
 .student-card {
-  width: 100%;
-
   margin: 1.5rem 0;
 
   display: flex;
@@ -13,7 +11,7 @@
   height: 19rem;
   border-radius: 1rem;
 
-  background: #CCC;
+  background: var(--color-primary-lighter);
   
   display: flex;
   align-items: center;
@@ -25,10 +23,11 @@
   margin-left: 1.5rem;
   margin-right: 5rem;
   border-radius: 50%;
+  border: 2px solid var(--color-line-in-white);
 
-  background: gray;
-  font-size: 5rem;
-  color: #ABABAB;
+  background: var(--color-text-complement);
+  font-size: 6rem;
+  color: var(--color-text-base);
 
   display: flex;
   align-items: center;
@@ -40,7 +39,6 @@
   max-width: 100%;
   max-height: 100%;
   border-radius: 50%;
-  border: 2px solid #808080;
 }
 
 .student-card .card .student-info {
@@ -50,7 +48,7 @@
 
   font-size: 1.7rem;
   font-family: Poppins, sans-serif;
-  color: #242424;
+  color: var(--color-line-in-white);
 
   display: flex;
   flex-direction: column;
@@ -67,8 +65,9 @@
   border-radius: 1rem;
   border: 0;
 
-  background: linear-gradient(130deg,#ee3123 -40%,#fa7f0b 50%,#fcaf17 120%);
-  color: var(--color-text-gray);
+  background: var(--color-primary-darker);
+  color: var(--color-input-background);
+  font-size: 1.6rem;
 
   align-self: flex-end;
   outline: none;
@@ -93,18 +92,18 @@
   display: flex !important;
 
   z-index: 1;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.7);
 }
 
 .modal-dialog {
   width: 80%;
-  height: 60%;
   border-radius: 1rem;
   padding: 3.5rem;
 
-  background-color: var(--color-background-light);
+  background-color: var(--color-primary-darker);
   margin: auto;
-  border: 1px solid #888;
+  border: 2px solid var(--color-text-complement);
+  color: #FFF;
 }
 
 .modal-dialog .modal-header h1 {
@@ -123,10 +122,11 @@
   background: transparent;
   cursor: pointer;
   font-size: 3rem;
+  color: #FFF;
 }
 
 .modal-dialog .modal-title button:hover {
-  color: #505050;
+  color: var(--color-text-in-primary);
 }
 
 .modal-dialog .modal-body {
@@ -152,7 +152,7 @@
     height: 8rem;
     margin-right: 3rem;
   
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .student-card .card span {
@@ -189,6 +189,6 @@
     height: 9rem;
     margin-right: 3rem;
   
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }

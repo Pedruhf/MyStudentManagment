@@ -5,7 +5,7 @@
   width: 100%;
   padding-right: 2rem;
 
-  background: linear-gradient(to left,#ee3123 -40%,#fa7f0b 50%,#fcaf17 120%);
+  background: linear-gradient(130deg,#9871F5 -40%,#8257E5 50%, #6842C2 100%);
 
   display: flex;
   align-items: center;
@@ -14,7 +14,7 @@
 
 .card-footer span {
   font-size: 2rem;
-  color: var(--color-text-gray);
+  color: var(--color-line-in-white);
 }
 
 @media (max-width: 500px) {

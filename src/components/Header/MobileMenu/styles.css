@@ -21,7 +21,7 @@
 
   background: transparent;
 
-  color: var(--color-text-gray);
+  color: var(--color-line-in-white);
 
   cursor: pointer;
 }
@@ -31,7 +31,7 @@
   height: 100%;
   padding: 3rem;
 
-  background-color: var(--color-background-light);
+  background-color: var(--color-background);
   border: 1px solid #888;
 }
 
@@ -78,7 +78,7 @@
 
   display: block;
   font-size: 2.5rem;
-  color: var(--color-text-black);
+  color: var(--color-text-title);
 }
 
 .menu .menu-content .menu-header nav a span {
@@ -86,7 +86,7 @@
   margin-left: 1rem;
   display: block;
   font-size: 2.5rem;
-  color: var(--color-text-black);
+  color: var(--color-text-title);
 }
 
 .menu .menu-content .menu-header nav a + a {

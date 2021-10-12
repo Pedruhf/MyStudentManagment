@@ -26,11 +26,11 @@ export default function MobileMenu() {
           <div className="menu-button"><button className="material-icons" onClick={() => toggleMenu('close')} >close</button></div>
           <div className="menu-header">
             <nav>
-              <Link style={currentPage === '/' ? {background: '#CCC'} : {}} onClick={() => toggleMenu('close')} to="/"><span>Início</span></Link>
-              <Link style={currentPage === '/seus-alunos' ? {background: '#CCC'} : {}} onClick={() => toggleMenu('close')} to="/seus-alunos"><span>Alunos</span></Link>
-              <Link style={currentPage === '/suas-turmas' ? {background: '#CCC'} : {}} onClick={() => toggleMenu('close')} to="/suas-turmas"><span>Turmas</span></Link>
-              <Link style={currentPage === '/cadastrar-alunos' ? {background: '#CCC'} : {}} onClick={() => toggleMenu('close')} to="/cadastrar-alunos"><span>Cadastrar alunos</span></Link>
-              <Link style={currentPage === '/cadastrar-turmas' ? {background: '#CCC'} : {}} onClick={() => toggleMenu('close')} to="/cadastrar-turmas"><span>Cadastrar turmas</span></Link>
+              <Link style={currentPage === '/' ? {background: '#9871F5'} : {}} onClick={() => toggleMenu('close')} to="/"><span>Início</span></Link>
+              <Link style={currentPage === '/seus-alunos' ? {background: '#9871F5'} : {}} onClick={() => toggleMenu('close')} to="/seus-alunos"><span>Alunos</span></Link>
+              <Link style={currentPage === '/suas-turmas' ? {background: '#9871F5'} : {}} onClick={() => toggleMenu('close')} to="/suas-turmas"><span>Turmas</span></Link>
+              <Link style={currentPage === '/cadastrar-alunos' ? {background: '#9871F5'} : {}} onClick={() => toggleMenu('close')} to="/cadastrar-alunos"><span>Cadastrar alunos</span></Link>
+              <Link style={currentPage === '/cadastrar-turmas' ? {background: '#9871F5'} : {}} onClick={() => toggleMenu('close')} to="/cadastrar-turmas"><span>Cadastrar turmas</span></Link>
             </nav>
           </div>
         </Card>
