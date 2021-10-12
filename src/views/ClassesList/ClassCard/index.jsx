@@ -21,22 +21,22 @@ export default function ClassCard({ classData }) {
       <span>Horário: {classData.data} às {classData.hour}</span>
       
       <Button variant="primary" onClick={handleShow}>
-            Informações
-          </Button>
+        Informações
+      </Button>
 
-          <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
-              <Modal.Title>
-                <Button className="material-icons" variant="secondary" onClick={handleClose}>
-                  close
-                </Button>
-              </Modal.Title>
-              <h1>Dados da turma de {classData.name}</h1>
-            </Modal.Header>
-            <Modal.Body>
-              {allStudents.map(student => <StudentCard key={student.id} student={student} />)}
-            </Modal.Body>
-          </Modal>
+      <Modal className="class-modal" show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>
+            <Button className="material-icons" variant="secondary" onClick={handleClose}>
+              close
+            </Button>
+          </Modal.Title>
+          <h1>Dados da turma de {classData.name}</h1>
+        </Modal.Header>
+        <Modal.Body>
+          {allStudents.map(student => <StudentCard key={student.id} student={student} />)}
+        </Modal.Body>
+      </Modal>
     </div>
   )
 }
