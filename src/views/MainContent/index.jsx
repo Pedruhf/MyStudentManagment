@@ -5,7 +5,12 @@ import { Link } from 'react-router-dom';
 
 import { Card } from 'react-bootstrap';
 
+import { useSelector } from 'react-redux';
+
 export default function MainContent() {
+  const studentsCount = useSelector(state => state.students.alunos.length);
+  const classCount = useSelector(state => state.classes.turmas.length);
+
   return (
     <main>
       <div>
@@ -15,7 +20,7 @@ export default function MainContent() {
               <i className="fas fa-user-graduate"></i>
             </div>
             <div className="card-info">
-              <span>50</span>
+              <div><span>{studentsCount}</span></div>
               <span>Seus alunos</span>
             </div>
           </Card>
@@ -27,7 +32,7 @@ export default function MainContent() {
               <i className="material-icons">class</i>
             </div>
             <div className="card-info">
-              <span>50</span>
+            <div><span>{classCount}</span></div>
               <span>Suas turmas</span>
             </div>
           </Card>
@@ -41,7 +46,6 @@ export default function MainContent() {
               <i className="fas fa-user-edit"></i>
             </div>
             <div className="card-info">
-              <span>50</span>
               <span>Cadastrar novos alunos</span>
             </div>
           </Card>
@@ -53,7 +57,6 @@ export default function MainContent() {
               <i className="far fa-edit"></i>
             </div>
             <div className="card-info">
-              <span>50</span>
               <span>Cadastrar novas turmas</span>
             </div>
           </Card>

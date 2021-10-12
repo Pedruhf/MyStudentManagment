@@ -12,9 +12,19 @@ export default function StudentCard({ student }) {
   return (
     <div className="student-card">
       <Card>
-        <div className="student-image">
-          <i className="fas fa-user"></i>
-        </div>
+      {student.image_url === '' ?
+          (
+            <div className="student-image">
+              <i className="fas fa-user"></i>
+            </div> 
+          ) :
+          (
+            <div className="student-image">
+              <img src={student.image_url} alt="user"/>
+            </div>
+          )
+        }
+      
         <div className="student-info">
           <span>Nome: {student.name}</span>
           <span>E-mail: {student.email}</span>

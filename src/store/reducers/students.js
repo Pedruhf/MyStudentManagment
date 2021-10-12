@@ -14,7 +14,7 @@ const INITIAL_STATE = {
       "birth_date":	"21/11/1998",
       "breed": "Branco(a)",
       "nationality": "Brasileiro(a)",
-      "image_url": ""
+      "image_url": "https://avatars.githubusercontent.com/u/39572742?v=4"
     },
     {
       "id": 2,

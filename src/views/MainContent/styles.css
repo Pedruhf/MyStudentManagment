@@ -51,6 +51,11 @@ main .card.classes-register {
   margin-top: 4rem;
 }
 
+main .card.students-register .card-info,
+main .card.classes-register .card-info {
+  align-self: flex-end;
+}
+
 main .card .card-icon {
   align-self: center;
 }
@@ -58,6 +63,10 @@ main .card .card-icon {
 main .card .card-icon i {
   font-size: 8rem;
   color: #FFF;
+}
+
+main .card.classes .card-icon i {
+  margin-left: -1rem;
 }
 
 main .card .card-info {
@@ -71,6 +80,20 @@ main .card .card-info {
 
 main .card .card-info {
   text-align: right;
+}
+
+main .card .card-info > div {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--color-text-gray);
+  display: flex;
+  border-radius: 50%;
+  align-content: center;
+  justify-content: center;
+}
+
+main .card .card-info > div span {
+  align-self: center;
 }
 
 @media (max-width: 500px) {
@@ -93,6 +116,16 @@ main .card .card-info {
 
   main .card .card-icon i {
     font-size: 6.5rem;
+  }
+
+  main .card .card-info > div {
+    width: 25px;
+    height: 25px;
+  }
+  
+  main .card .card-info > div span {
+    font-size: 1.6rem;
+    font-weight: bold;
   }
 }
 
