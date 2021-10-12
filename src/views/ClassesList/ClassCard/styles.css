@@ -59,6 +59,7 @@
 
 .fade.modal.show.class-modal .modal-dialog {
   width: 90%;
+  max-height: 90%;
   border-radius: 1rem;
   padding: 3.5rem;
   overflow: auto
