@@ -515,6 +515,12 @@ export default function course(state = INITIAL_STATE, action) {
   switch (action.type) {
     case 'ADD_CLASS':
       return { ...state, turmas: [ ...state.turmas, action.payload]};
+
+    case 'ADD_STUDENT_TO_CLASS': {
+      const classIndex = state.turmas.findIndex(classe => classe.name === action.payload.class);
+      state.turmas[classIndex].students.push(action.payload);
+      return {...state};
+    }
     
     default:
       return state;

@@ -27,6 +27,7 @@ function StudentRegister({ classes, students }) {
     const id = sortedStudents[0].id + 1;
 
     dispatch({type: 'ADD_STUDENT', payload: { ...inputs, id }});
+    dispatch({type: 'ADD_STUDENT_TO_CLASS', payload: { ...inputs, id }});
     setInputs({});
   }
 
