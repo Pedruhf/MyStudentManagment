@@ -132,11 +132,23 @@ function StudentRegister({ classes, students }) {
           <Form.Label>Data de nascimento</Form.Label>
           <Form.Control
             required
-            name="birthDate"
-            value={inputs.birthDate || ''}
+            name="birth_date"
+            value={inputs.birth_date || ''}
             onChange={handleInputChange}
             type="text"
             placeholder="Digite a data de nascimento do aluno"
+        />
+        </Form.Group>
+
+        <Form.Group className="student-name mb-3">
+          <Form.Label>Estado civíl</Form.Label>
+          <Form.Control
+            required
+            name="marital_status"
+            value={inputs.marital_status || ''}
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Digite o estado civíl do aluno"
         />
         </Form.Group>
 
