@@ -1,7 +1,8 @@
 main {
-  width: 100%;
-
   grid-area: main-content;
+
+  width: 100%;
+  padding: 5rem 0 8rem;
 
   background: var(--color-input-background);
 
@@ -13,6 +14,31 @@ main {
 
 main a {
   text-decoration: none;
+}
+
+main .main-card {
+  width: 100%;
+  height: 40rem;
+  padding: 0 3rem 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .main-card span {
+  max-width: 70rem;
+  font-size: 4rem;
+  color: var(--color-primary-darker);
+  font-family: Poppins, sans-serif;
+  line-height: 5rem;
+}
+
+main .main-card img {
+  width: 30rem;
+  height: 30rem;
+  margin-right: 2rem;
+  background-color: transparent;
 }
 
 main .card {
@@ -37,18 +63,18 @@ main .card.total-students {
 
 main .card.classes {
   background: var(--color-secundary);
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 main .card.students-register {
   background: var(--color-primary-dark);
-  margin-left: 4rem;
+  margin-left: 6rem;
 }
 
 main .card.classes-register {
   background: var(--color-secundary-dark);
-  margin-left: 4rem;
-  margin-top: 4rem;
+  margin-left: 6rem;
+  margin-top: 6rem;
 }
 
 main .card.students-register .card-info,
@@ -102,6 +128,32 @@ main .card .card-info > div span {
     flex-direction: column;
   }
 
+  main {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .main-card {
+    flex-direction: column;
+    padding: 0 2rem;
+    margin-top: -5rem;
+    margin-bottom: 0;
+  }
+
+  main .main-card img {
+    width: 20rem;
+    height: 20rem;
+    margin-right: 0;
+    background-color: transparent;
+  }
+
+  main .main-card span {
+    font-size: 2.75rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+
   main .card {
     width: 27.5rem;
     height: 18rem;
@@ -109,7 +161,6 @@ main .card .card-info > div span {
     border-radius: 1.5rem;
   }
 
-  
   main .card .card-info {
     font-size: 1.8rem;
   }
@@ -127,15 +178,40 @@ main .card .card-info > div span {
     font-size: 1.6rem;
     font-weight: bold;
   }
+  
+  main .card.classes {
+    margin-top: 4rem;
+  }
+  
+  main .card.students-register {
+    margin-top: 4rem;
+    margin-left: 0rem;
+  }
+  
+  main .card.classes-register {
+    margin-left: 0rem;
+    margin-top: 4rem;
+  }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 768px) {
   main {
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
   }
 
+  main .main-card {
+    flex-direction: column;
+    margin-bottom: 6rem;
+  }
+
+  main .main-card span {
+    max-width: 60rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    text-align: center;
+  }
 
   main .card.total-students,
   main .card.classes,

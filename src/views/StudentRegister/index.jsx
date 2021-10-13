@@ -167,8 +167,8 @@ function StudentRegister({ classes, students }) {
         <Form.Group className="student-name mb-3">
           <Form.Label>Foto</Form.Label>
           <Form.Control
-            name="imageUrl"
-            value={inputs.imageUrl || ''}
+            name="image_url"
+            value={inputs.image_url || ''}
             onChange={handleInputChange}
             type="text"
             placeholder="Digite a URL da foto do aluno"

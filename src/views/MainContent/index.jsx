@@ -1,10 +1,9 @@
 import React from "react";
 import './styles.css';
+import MainImage from '../../images/main.png';
 
 import { Link } from 'react-router-dom';
-
 import { Card } from 'react-bootstrap';
-
 import { useSelector } from 'react-redux';
 
 export default function MainContent() {
@@ -13,6 +12,12 @@ export default function MainContent() {
 
   return (
     <main>
+
+      <div className="main-card">
+        <img src={MainImage} alt="Student Managment" />
+        <span>Sua ferramenta acadêmica para gestão de alunos e turmas</span>
+      </div>
+
       <div>
         <Link to="/seus-alunos">
           <Card className="total-students">
