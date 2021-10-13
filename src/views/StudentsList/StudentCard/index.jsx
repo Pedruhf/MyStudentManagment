@@ -12,7 +12,7 @@ export default function StudentCard({ student }) {
   return (
     <div className="student-card">
       <Card>
-      {student.image_url === '' ?
+      {!student.image_url?.length ?
           (
             <div className="student-image">
               <i className="fas fa-user"></i>

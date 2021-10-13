@@ -1,23 +1,7 @@
 const INITIAL_STATE = {
-  "alunos": [
+  alunos: [
     {
       "id": 1,
-      "name": "Pedro Henrique de Freitas Silva",
-      "email": "delauraph@gmail.com",
-      "course": "Engenharia de computação",
-      "phone": "(84) 98137-7722",
-      "registration": "202112384922",
-      "entry_year": 2017,
-      "period": 8,
-      "gender":	"Masculino",
-      "marital_status":	"Solteiro(a)",
-      "birth_date":	"21/11/1998",
-      "breed": "Branco(a)",
-      "nationality": "Brasileiro(a)",
-      "image_url": "https://avatars.githubusercontent.com/u/39572742?v=4"
-    },
-    {
-      "id": 2,
       "name": "Francisco Lucas Nascimento",
       "email": "xicolucas@gmail.com",
       "course": "Tecnologia da informação",
@@ -33,7 +17,7 @@ const INITIAL_STATE = {
       "image_url": ""
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Emanoel souza",
       "email": "emsouze@gmail.com",
       "course": "Engenharia de produção",
@@ -49,7 +33,7 @@ const INITIAL_STATE = {
       "image_url": ""
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Felipe Amorim Bezerra",
       "email": "felbez@gmail.com",
       "course": "Tecnologia da informação",
@@ -65,7 +49,7 @@ const INITIAL_STATE = {
       "image_url": ""
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Inacio Silva Lopes",
       "email": "inaciosilvalopes@gmail.com",
       "course": "Engenharia de computação",
@@ -81,7 +65,7 @@ const INITIAL_STATE = {
       "image_url": ""
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "Natanael Oliveira Filho",
       "email": "NatanFilho@gmail.com",
       "course": "Tecnologia da informação",
